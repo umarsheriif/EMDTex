@@ -1,0 +1,18 @@
+{
+    "development": {
+      "username": "umarsheriif",
+      "password": "P@ssw0rdP@ssw0rd",
+      "database": "EMDTDEMO",
+      "host": "emdtdd.database.windows.net",
+      "dialect": "mssql"
+    },
+
+    "AzureCloud": {
+      "username": "umarsheriif",
+      "password": "P@ssw0rdP@ssw0rd",
+      "database": "EMDTDEMO",
+      "host": "emdtdd.database.windows.net",
+      "dialect": "mssql"
+    }
+  }
+  

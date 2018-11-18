@@ -1,0 +1,147 @@
+<%- include headermain.ejs %>
+<div class="m-grid__item m-grid__item--fluid m-wrapper">
+   <!-- BEGIN: Subheader -->
+   <div class="m-subheader ">
+      <div class="d-flex align-items-center">
+         <div class="mr-auto">
+            <h3 class="m-subheader__title ">Dashboard</h3>
+         </div>
+         <div>
+            <span class="m-subheader__daterange" id="m_dashboard_daterangepicker">
+            <span class="m-subheader__daterange-label">
+            <span class="m-subheader__daterange-title"></span>
+            <span class="m-subheader__daterange-date m--font-brand"></span>
+            </span>
+            <a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+            <i class="la la-angle-down"></i>
+            </a>
+            </span>
+         </div>
+      </div>
+   </div>
+   <!-- END: Subheader -->
+   <div class="m-content">
+      <div class="m-portlet">
+         <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+               <div class="m-portlet__head-title">
+                  <span class="m-portlet__head-icon m--hide">
+                  <i class="la la-gear"></i>
+                  </span>
+                  <h3 class="m-portlet__head-text">
+                     Create your transaction
+                  </h3>
+               </div>
+            </div>
+         </div>
+         <!--begin::Form-->
+            <div class="card-body p-5">
+               <p> <img src="/assets/demo/default/media/img/pay-visa.png"> 
+                  <img src="/assets/demo/default/media/img/pay-visa-el.png"> 
+                  <img src="/assets/demo/default/media/img/pay-mastercard.png">
+                  <img src="/assets/demo/default/media/img/pay-american-ex.png"> 
+               </p>
+               <p class="alert alert-success">Some text success or error</p>
+               <form role="form" action="/payment/verify" method="POST">
+			   <div class="row">
+                     <div class="col-sm-8">
+                        <div class="form-group">
+                           <label><span class="hidden-xs">Type</span> </label>
+                           <div class="form-inline">
+                              <select class="form-control" style="width:45%" name="cardtype">
+                                 <option>Card Type</option>
+                                 <option value = "Visa">Visa</option>
+                                 <option value = "MasterCard">Master Card</option>  
+								 <option value = "AmericanExpress">American Express</option>
+                                 <option value = "Discover">Discover</option>  
+								 
+
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+					 </div>
+                  <div class="form-group">
+                     <label for="username">Full name (on the card)</label>
+                     <div class="input-group">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text"><i class="fa fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" name="name" placeholder="" required="">
+                     </div>
+                     <!-- input-group.// -->
+                  </div>
+                  <!-- form-group.// -->
+                  <div class="form-group">
+                     <label for="cardNumber">Card number</label>
+                     <div class="input-group">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                        </div>
+                        <input type="text" class="form-control" name="cardNumber" placeholder="">
+                     </div>
+                     <!-- input-group.// -->
+                  </div>
+                  <!-- form-group.// -->
+                  <div class="row">
+                     <div class="col-sm-8">
+                        <div class="form-group">
+                           <label><span class="hidden-xs">Expiration</span> </label>
+                           <div class="form-inline">
+                              <select class="form-control" style="width:45%" name="date">
+                                 <option>MM</option>
+                                 <option value="01">01 - Jan</option>
+                                 <option value = "02">02 - Feb</option>
+                                 <option value = "03">03 - March</option>  
+								 <option value="04">04 - April</option>
+                                 <option value = "05">05 - May</option>
+                                 <option value = "06">06 - June</option>  
+								 <option value="07">07 - July</option>
+                                 <option value = "08">08 - Aug</option>
+                                 <option value = "09">09 - Sept</option>  
+								 <option value="10">10 - Oct</option>
+                                 <option value = "11">11 - Nov</option>
+                                 <option value = "12">12 - Dec</option>
+								 
+                              </select>
+                              <span style="width:10%; text-align: center"> / </span>
+                              <select class="form-control" style="width:45%" name="year">
+                                 <option>YY</option>
+                                 <option value = "2018">2018</option>
+                                 <option value = "2019">2019</option>
+								 <option value = "2020">2020</option>
+								 <option value = "2021">2021</option>
+								 <option value = "2022">2022</option>
+								 <option value = "2023">2023</option>
+								 <option value = "2024">2024</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-4">
+                        <div class="form-group">
+                           <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+                           <input class="form-control" name="cvv"required="" type="text">
+                        </div>
+                        <!-- form-group.// -->
+                     </div>
+                  </div>
+                  <!-- row.// -->
+                  <button class="subscribe btn btn-primary btn-block" type="submit"> Confirm  </button>
+               </form>
+            </div>
+            <!-- card-body.// -->
+         <!-- card.// -->
+         <!--end::Form-->
+      </div>
+      <!--Begin::Section-->
+	
+      <!--End::Section-->
+      <!--Begin::Section-->
+
+      <!--End::Section-->
+   </div>
+</div>
+</div>
+<!-- end:: Body -->
+<%- include footer.ejs %>

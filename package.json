@@ -1,0 +1,56 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set DEBUG =app:* & nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/cosmos": "^2.0.0-4",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "card-validator": "^5.0.0",
+    "chalk": "^2.4.1",
+    "cookie-parser": "^1.4.3",
+    "credit-card": "^3.0.1",
+    "crypto-json": "^2.0.2",
+    "debug": "^2.6.9",
+    "documentdb": "^1.14.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.0.0",
+    "express-session": "^1.15.6",
+    "jquery": "^3.3.1",
+    "mongodb": "^3.1.4",
+    "morgan": "^1.9.0",
+    "mssql": "^4.1.0",
+    "multer": "^1.4.1",
+    "node-datetime": "^2.1.2",
+    "nodemailer": "^4.6.8",
+    "nodeman": "^1.1.2",
+    "nodemon": "^1.18.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "payform": "^1.2.5",
+    "popper.js": "^1.14.4",
+    "pug": "^2.0.3",
+    "read-text-file": "^1.1.0",
+    "xml2js": "^0.4.19"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}

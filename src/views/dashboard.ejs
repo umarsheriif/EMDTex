@@ -1,0 +1,1059 @@
+<%- include dashboardheader.ejs %>
+<!-- begin::Body -->
+<div class="m-grid__item m-grid__item--fluid  m-grid m-grid--ver-desktop m-grid--desktop m-page__container m-body">
+   <div class="m-grid__item m-grid__item--fluid m-wrapper">
+      <!-- BEGIN: Subheader -->
+      <div class="m-subheader ">
+         <div class="d-flex align-items-center">
+            <div class="mr-auto">
+               <h3 class="m-subheader__title ">Dashboard</h3>
+            </div>
+            <div>
+               <span class="m-subheader__daterange" id="m_dashboard_daterangepicker">
+               <span class="m-subheader__daterange-label">
+               <span class="m-subheader__daterange-title"></span>
+               <span class="m-subheader__daterange-date m--font-brand"></span>
+               </span>
+               <a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+               <i class="la la-angle-down"></i>
+               </a>
+               </span>
+            </div>
+         </div>
+      </div>
+      <!-- END: Subheader -->
+      <div class="m-content">
+         <!--Begin::Section-->
+         <div class="row">
+            <div class="col-xl-4">
+               <div class="m-portlet m-portlet--bordered-semi m-portlet--full-height ">
+                  <div class="m-portlet__head">
+                     <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-title">
+                           <h3 class="m-portlet__head-text">
+                              Technologies
+                           </h3>
+                        </div>
+                     </div>
+                     <div class="m-portlet__head-tools">
+                        <ul class="m-portlet__nav">
+                           <li class="m-portlet__nav-item m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
+                              <div class="m-dropdown__wrapper">
+                                 <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 36.5px;"></span>
+                                 <div class="m-dropdown__inner">
+                                    <div class="m-dropdown__body">
+                                       <div class="m-dropdown__content">
+                                          <ul class="m-nav">
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-share"></i>
+                                                <span class="m-nav__link-text">Activity</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-chat-1"></i>
+                                                <span class="m-nav__link-text">Messages</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-info"></i>
+                                                <span class="m-nav__link-text">FAQ</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-lifebuoy"></i>
+                                                <span class="m-nav__link-text">Support</span>
+                                                </a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="m-portlet__body">
+                     <!--begin::Widget5-->
+                     <div class="m-widget4">
+                        <div class="m-widget4__chart m-portlet-fit--sides m--margin-top-10 m--margin-top-20" style="height:260px;">
+                           <canvas id="m_chart_trends_stats"></canvas>
+                        </div>
+                        <div class="m-widget4__item">
+                           <div class="m-widget4__img m-widget4__img--logo">
+                              <img src="/assets/app/media/img/client-logos/logo3.png" alt="">
+                           </div>
+                           <div class="m-widget4__info">
+                              <span class="m-widget4__title">
+                              Phyton
+                              </span>
+                              <br>
+                              <span class="m-widget4__sub">
+                              A Programming Language
+                              </span>
+                           </div>
+                           <span class="m-widget4__ext">
+                           <span class="m-widget4__number m--font-danger">25%</span>
+                           </span>
+                        </div>
+                        <div class="m-widget4__item">
+                           <div class="m-widget4__img m-widget4__img--logo">
+                              <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt="">
+                           </div>
+                           <div class="m-widget4__info">
+                              <span class="m-widget4__title">
+                              NodeJS
+                              </span>
+                              <br>
+                              <span class="m-widget4__sub">
+                              A Programming Language
+                              </span>
+                           </div>
+                           <span class="m-widget4__ext">
+                           <span class="m-widget4__number m--font-danger">30%</span>
+                           </span>
+                        </div>
+                        <div class="m-widget4__item">
+                           <div class="m-widget4__img m-widget4__img--logo">
+                              <img src="https://azure.microsoft.com/svghandler/cosmos-db?width=600&height=315" alt="">
+                           </div>
+                           <div class="m-widget4__info">
+                              <span class="m-widget4__title">
+                              Cosmosdb
+                              </span>
+                              <br>
+                              <span class="m-widget4__sub">
+                              Non senstive data document database
+                              </span>
+                           </div>
+                           <span class="m-widget4__ext">
+                           <span class="m-widget4__number m--font-danger">20%</span>
+                           </span>
+                        </div>
+                        <div class="m-widget4__item">
+                           <div class="m-widget4__img m-widget4__img--logo">
+                              <img src="https://d22e4d61ky6061.cloudfront.net/sites/default/files/Microsoft%20SQL%20Server_0.png" alt="">
+                           </div>
+                           <div class="m-widget4__info">
+                              <span class="m-widget4__title">
+                              MSSQL
+                              </span>
+                              <br>
+                              <span class="m-widget4__sub">
+                              senstive information database
+                              </span>
+                           </div>
+                           <span class="m-widget4__ext">
+                           <span class="m-widget4__number m--font-danger">20%</span>
+                           </span>
+                        </div>
+                     </div>
+                     <!--end::Widget 5-->
+                  </div>
+               </div>
+               <!--end:: Widgets/Top Products-->
+            </div>
+            <div class="col-xl-4">
+               <!--begin:: Widgets/Activity-->
+               <div class="m-portlet m-portlet--bordered-semi m-portlet--widget-fit m-portlet--full-height m-portlet--skin-light  m-portlet--rounded-force">
+                  <div class="m-portlet__head">
+                     <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-title">
+                           <h3 class="m-portlet__head-text m--font-light">
+                              Components
+                           </h3>
+                        </div>
+                     </div>
+                     <div class="m-portlet__head-tools">
+                        <ul class="m-portlet__nav">
+                           <li class="m-portlet__nav-item m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover">
+                              <div class="m-dropdown__wrapper">
+                                 <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+                                 <div class="m-dropdown__inner">
+                                    <div class="m-dropdown__body">
+                                       <div class="m-dropdown__content">
+                                          <ul class="m-nav">
+                                             <li class="m-nav__section m-nav__section--first">
+                                                <span class="m-nav__section-text">Quick Actions</span>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-share"></i>
+                                                <span class="m-nav__link-text">Activity</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-chat-1"></i>
+                                                <span class="m-nav__link-text">Messages</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-info"></i>
+                                                <span class="m-nav__link-text">FAQ</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-lifebuoy"></i>
+                                                <span class="m-nav__link-text">Support</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__separator m-nav__separator--fit">
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">Cancel</a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="m-portlet__body">
+                     <div class="m-widget17">
+                        <div class="m-widget17__visual m-widget17__visual--chart m-portlet-fit--top m-portlet-fit--sides m--bg-danger">
+                           <div class="m-widget17__chart" style="height:320px;">
+                              <canvas id="m_chart_activities"></canvas>
+                           </div>
+                        </div>
+                        <div class="m-widget17__stats">
+                           <div class="m-widget17__items m-widget17__items-col1">
+                              <div class="m-widget17__item">
+                                 <span class="m-widget17__icon">
+                                 <i class="flaticon-truck m--font-brand"></i>
+                                 </span>
+                                 <a href="/data/checkout"><span class="m-widget17__subtitle">
+                                 Web application
+                                 </span></a>
+                                 <span class="m-widget17__desc">
+                                 Our nodeJS webAPP
+                                 </span>
+                              </div>
+                              <div class="m-widget17__item">
+                                 <span class="m-widget17__icon">
+                                 <i class="flaticon-paper-plane m--font-info"></i>
+                                 </span>
+                                 <a href="#"><span class="m-widget17__subtitle">
+                                 ML App
+                                 </span></a>
+                                 <span class="m-widget17__desc">
+                                 Our machinelearning APP
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="m-widget17__items m-widget17__items-col2">
+                              <div class="m-widget17__item">
+                                 <span class="m-widget17__icon">
+                                 <i class="flaticon-pie-chart m--font-success"></i>
+                                 </span>
+                                 <a href="#"><span  class="m-widget17__subtitle">
+                                 Azure stack
+                                 </span></a>
+                                 <span class="m-widget17__desc">
+                                 Data saved on ASDK
+                                 </span>
+                              </div>
+                              <div class="m-widget17__item">
+                                 <span class="m-widget17__icon">
+                                 <i class="flaticon-time m--font-danger"></i>
+                                 </span>
+                                 <a href="#azcltable"><span class="m-widget17__subtitle">
+                                 Azure
+                                 </span></a>
+                                 <span class="m-widget17__desc">
+                                 Data saved on cloud
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--end:: Widgets/Activity-->
+            </div>
+            <div class="col-xl-4">
+               <!--begin:: Widgets/Blog-->
+               <div class="m-portlet m-portlet--bordered-semi m-portlet--full-height  m-portlet--rounded-force">
+                  <div class="m-portlet__head m-portlet__head--fit">
+                     <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-action">
+                           <button type="button" class="btn btn-sm m-btn--pill  btn-brand">ML Model</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-portlet__body">
+                     <div class="m-widget19">
+                        <div class="m-widget19__pic m-portlet-fit--top m-portlet-fit--sides" style="min-height-: 286px">
+                           <img src="/ml2.jpg" alt="">
+                           <h3 class="m-widget19__title m--font-light">
+                              Machine Learning Training Model
+                           </h3>
+                           <div class="m-widget19__shadow"></div>
+                        </div>
+                        <div class="m-widget19__content">
+                           <div class="m-widget19__header">
+                              <div class="m-widget19__user-img">
+                                 <img class="m-widget19__img" src="/assets/app/media/img/users/user1.PNG" alt="">
+                              </div>
+                              <div class="m-widget19__info">
+                                 <span class="m-widget19__username">
+                                 Tae Joo
+                                 </span>
+                                 <br>
+                                 <span class="m-widget19__time">
+                                 Senior Architect
+                                 </span>
+                              </div>
+                         
+                           </div>
+                           <div class="m-widget19__body">
+                            <img style="max-width: 100%;" src="/assets/ml.PNG" alt="">
+
+                               
+                           </div>
+                           
+                        </div>
+                        <div class="m-widget19__action">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--end:: Widgets/Blog-->
+            </div>
+         </div>
+         <!--End::Section-->
+         <!--Begin::Section-->
+         <div class="row">
+            <div class="col-xl-6">
+               <!--begin:: Widgets/Application Sales-->
+               <div class="m-portlet m-portlet--full-height  m-portlet--rounded">
+                  <div class="m-portlet__head">
+                     <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-title">
+                           <h3 class="m-portlet__head-text">
+                              AzureStack Data
+                           </h3>
+                        </div>
+                     </div>
+                     <div class="m-portlet__head-tools">
+                        <ul class="nav nav-pills nav-pills--brand m-nav-pills--align-right m-nav-pills--btn-pill m-nav-pills--btn-sm" role="tablist">
+                           <li class="nav-item m-tabs__item">
+                           </li>
+                           <li class="nav-item m-tabs__item">
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="m-portlet__body">
+                     <div class="tab-content">
+                        <div class="tab-pane active" id="m_widget11_tab1_content">
+                           <!--begin::Widget 11-->
+                           <div class="m-widget11">
+                              <div class="table-responsive" id="asdktable">
+                                 <!--begin::Table-->
+                                 <table class="table table-striped- table-bordered table-hover table-checkable dataTable dtr-inline" id="m_table_1" role="grid" aria-describedby="m_table_1_info" style="width: 1321px;">
+                                    <!--begin::Thead-->
+                                    <thead>
+                                       <tr>
+                                          <th title="Payee" data-field="Owner">Owner</th>
+                                          <th title="cnum" data-field="Owner">Card Number</th>
+                                          <th title="Gender" data-field="gender">Gender</th>
+                                          <th title="Age" data-field="age">Age</th>
+                                          <th title="customerzipcode" data-field="cz">Customer zipcode</th>
+                                          <th title="merchantname" data-field="mn">Merchant</th>
+                                          <th title="merchantcategory" data-field="mc">Product/service category</th>
+                                          <th title= "merchantzipcode" date-field="mzc">Merchant Zip Code</th>
+                                          <th title= "Amount" date-field="Amount">Amount</th>
+                                          <th title= "isFraud" date-field="frauds">Fraud</th>
+                                          <th title= "Actions" date-field="Actions">Actions</th>
+                                       </tr>
+                                    </thead>
+                                    <!--end::Thead-->
+                                    <!--begin::Tbody-->
+                                    <tbody>
+                                       <%for (let i =0; i<Orderdata.length; i++) {%>
+                                       <tr role="row">
+                                          <td><%=Orderdata[i].cardHolder%></td>
+                                          <td><%=Orderdata[i].number%></td>
+                                          <td><%=Orderdata[i].gender%></td>
+                                          <td><%=Orderdata[i].age%></td>
+                                          <td><%=Orderdata[i].czipcode%></td>
+                                          <td><%=Orderdata[i].merchant_name%></td>
+                                          <td><%=Orderdata[i].mecn%></td>
+                                          <td><%=Orderdata[i].mzipcode%></td>
+                                          <td><%=Orderdata[i].amount%></td>
+                                          <td><button type="button" class="btn btn-<%=Orderdata[i].isFraudlabel%>"  data-offset="60px 0px" data-toggle="m-tooltip" data-placement="top" title="<%=Orderdata[i].isFraud%>" data-original-title="">
+													<%=Orderdata[i].isFraud%>
+												</button></td>
+                                          <td><a href="/data/<%=Orderdata[i].id%>"><button type="button" class="btn m-btn--square  btn-primary">Get Info</button></a></td>
+                                       </tr>
+                                       <%}%>
+                                    </tbody>
+                                    <!--end::Tbody-->
+                                 </table>
+                                 <!--end::Table-->
+                              </div>
+                              <div class="m-widget11__action m--align-right">
+                              </div>
+                           </div>
+                           <!--end::Widget 11-->
+                        </div>
+                        <div class="tab-pane" id="m_widget11_tab2_content">
+                           <!--begin::Widget 11-->
+                           <div class="m-widget11">
+                              <div class="table-responsive">
+                                 <!--end::Table-->
+                              </div>
+                           </div>
+                           <!--end::Widget 11-->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--end:: Widgets/Application Sales-->
+            </div>
+            <div class="col-xl-6">
+               <!--begin:: Widgets/Application Sales-->
+               <div class="m-portlet m-portlet--full-height  m-portlet--rounded">
+                  <div class="m-portlet__head">
+                     <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-title">
+                           <h3 class="m-portlet__head-text">
+                              Azure Data
+                           </h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-portlet__body">
+                     <div class="tab-content">
+                        <div class="tab-pane active two" id="m_widget12_tab1_content">
+                           <!--begin::Widget 11-->
+                           <div class="m-widget11" id="azcltable">
+                              <div class="table-responsive two">
+                                 <!--begin::Table-->
+                                 <table class="table table-striped- table-bordered table-hover table-checkable dataTable dtr-inline" id="m_table_2" role="grid" aria-describedby="m_table_1_info" style="width: 1321px;">
+                                    <!--begin::Thead-->
+                                    <thead>
+                                       <tr>
+                                            <th title="Payee" data-field="Owner">Owner</th>
+                                           <th title= "ecn" date-field="refid">Card Number</th>
+                                          <th title="Gender" data-field="gender">Gender</th>
+                                          <th title="Age" data-field="age">Age</th>
+                                          <th title="customerzipcode" data-field="cz">Customer zipcode</th>
+                                          <th title="merchantname" data-field="mn">Merchant</th>
+                                          <th title="merchantcategory" data-field="mc">Product/service category</th>
+                                          <th title= "merchantzipcode" date-field="mzc">Merchant Zip Code</th>
+                                           <th title="ct" data-field="ct">card type</th>
+                                          <th title= "Amount" date-field="Amount">Amount</th>
+                                          <th title= "isFraud" date-field="frauds">Fraud</th>
+                                         
+                                          <th title= "Actions" date-field="Actions">Actions</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <%for (let i =0; i<azuredata.length; i++) {%>
+                                       <tr>
+                                       <td>Hidden <%=i+1%></td>
+                                        <td><%=azuredata[i].encryptedCN%></td>
+                                          <td><%=azuredata[i].gender%></td>
+                                          <td><%=azuredata[i].age%></td>
+                                          <td><%=azuredata[i].czipcode%></td>
+                                          <td><%=azuredata[i].Mname%></td>
+                                          <td><%=azuredata[i].mecn%></td>
+                                          <td><%=azuredata[i].Mzipcode%></td>
+                                          <td><%=azuredata[i].cardtype%></td>
+                                          <td><%=azuredata[i].ammount%></td>
+                                          <td><button type="button" class="btn btn-<%=azuredata[i].isFraudlabel%>"  data-offset="60px 0px" data-toggle="m-tooltip" data-placement="top" title="<%=azuredata[i].isFraud%>" data-original-title="">
+													<%=azuredata[i].isFraud%>
+												</button></td>
+                                         
+                                          <td><a href="/data/api/cosmos/<%=azuredata[i].id%>"><button type="button" class="btn m-btn--square  btn-primary">Get Info</button></a></td>
+                                       </tr>
+                                       <%}%>
+                                    </tbody>
+                                    <!--end::Tbody-->
+                                 </table>
+                                 <!--end::Table-->
+                              </div>
+                           </div>
+                           <!--end::Widget 11-->
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <!--end:: Widgets/Application Sales-->
+            </div>
+         </div>
+         <!--End::Section-->
+         <!--Begin::Section-->
+         <div class="row">
+            <div class="col-xl-6 col-lg-12">
+               <!--Begin::Portlet-->
+               <div class="m-portlet  m-portlet--full-height  m-portlet--rounded">
+                  <div class="m-portlet__head">
+                     <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-title">
+                           <h3 class="m-portlet__head-text">
+                              ML APP
+                           </h3>
+                        </div>
+                     </div>
+                     <div class="m-portlet__head-tools">
+                        <ul class="m-portlet__nav">
+                           <li class="m-portlet__nav-item m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">
+                              <a href="#" class="m-portlet__nav-link m-portlet__nav-link--icon m-portlet__nav-link--icon-xl m-dropdown__toggle">
+                              <i class="la la-ellipsis-h m--font-brand"></i>
+                              </a>
+                              <div class="m-dropdown__wrapper">
+                                 <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+                                 <div class="m-dropdown__inner">
+                                    <div class="m-dropdown__body">
+                                       <div class="m-dropdown__content">
+                                          <ul class="m-nav">
+                                             <li class="m-nav__section m-nav__section--first">
+                                                <span class="m-nav__section-text">Quick Actions</span>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-share"></i>
+                                                <span class="m-nav__link-text">Activity</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-chat-1"></i>
+                                                <span class="m-nav__link-text">Messages</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-info"></i>
+                                                <span class="m-nav__link-text">FAQ</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="" class="m-nav__link">
+                                                <i class="m-nav__link-icon flaticon-lifebuoy"></i>
+                                                <span class="m-nav__link-text">Support</span>
+                                                </a>
+                                             </li>
+                                             <li class="m-nav__separator m-nav__separator--fit">
+                                             </li>
+                                             <li class="m-nav__item">
+                                                <a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">Cancel</a>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="m-portlet__body">
+                     <div  data-height="380" data-mobile-height="300">
+                        <!--Begin::Timeline 2 -->
+                        <div class="codebox">
+                           <script src="https://gist.github.com/omarsheriif/97df12c8bf0d1d1c205cd5a6134446f2.js" type="text/javascript"></script>
+                        </div>
+                        <!--End::Timeline 2 -->
+                     </div>
+                  </div>
+               </div>
+               <!--End::Portlet-->
+            </div>
+            <div class="col-xl-6 col-lg-12">
+               <!--Begin::Portlet-->
+               <div class="m-portlet m-portlet--full-height  m-portlet--rounded">
+                  <div class="m-portlet__head">
+                     <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-title">
+                           <h3 class="m-portlet__head-text">
+                              Recent Notifications
+                           </h3>
+                        </div>
+                     </div>
+                     <div class="m-portlet__head-tools">
+                        <ul class="nav nav-pills nav-pills--brand m-nav-pills--align-right m-nav-pills--btn-pill m-nav-pills--btn-sm" role="tablist">
+                           <li class="nav-item m-tabs__item">
+                              <a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_widget2_tab1_content" role="tab">
+                              Today
+                              </a>
+                           </li>
+                           <li class="nav-item m-tabs__item">
+                              <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_widget2_tab2_content" role="tab">
+                              Month
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="m-portlet__body">
+                     <div class="tab-content">
+                        <div class="tab-pane active" id="m_widget2_tab1_content">
+                           <!--Begin::Timeline 3 -->
+                           <div class="m-timeline-3">
+                           <%for (let i =0; i<azuredata.length; i++) {%>
+                              <div class="m-timeline-3__items">
+                                 <div class="m-timeline-3__item m-timeline-3__item--<%=azuredata[i].isFraudlabel%>">
+                                    <span class="m-timeline-3__item-time"><%=azuredata[i].isFraud%></span>
+                                    <div class="m-timeline-3__item-desc">
+                                       <span class="m-timeline-3__item-text">
+                                       <%=azuredata[i].now%>
+                                       </span>
+                                       <br>
+                                       <span class="m-timeline-3__item-user-name">
+                                       <a href="/data/api/cosmos/<%=azuredata[i].id%>" class="m-link m-link--metal m-timeline-3__item-link">
+                                       transaction query <%=azuredata[i].id%>
+                                       </a>
+                                       </span>
+                                    </div>
+                                 </div>
+                                                                                             </div>
+
+                                 <%}%>
+
+                            
+                        
+                             </div>
+                          
+                                
+                              </div>
+                           </div>
+                           <!--End::Timeline 3 -->
+                        </div>
+                        <div class="tab-pane" id="m_widget2_tab2_content">
+                         
+                           <!--End::Timeline 3 -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               </div>
+               <!--End::Portlet-->
+            </div>
+         </div>
+         <!--End::Section-->
+      </div>
+   </div>
+</div>
+<!-- end::Body -->
+<!-- begin::Footer -->
+<footer class="m-grid__item m-footer ">
+   <div class="m-container m-container--fluid m-container--full-height m-page__container">
+      <div class="m-footer__wrapper">
+         <div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
+            <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
+               <span class="m-footer__copyright">
+               <a href="" class="m-link">EMDT</a>
+               </span>
+            </div>
+           
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- end::Footer -->
+</div>
+<!-- end:: Page -->
+<!-- begin::Quick Sidebar -->
+<div id="m_quick_sidebar" class="m-quick-sidebar m-quick-sidebar--tabbed m-quick-sidebar--skin-light">
+   <div class="m-quick-sidebar__content m--hide">
+      <span id="m_quick_sidebar_close" class="m-quick-sidebar__close">
+      <i class="la la-close"></i>
+      </span>
+      <ul id="m_quick_sidebar_tabs" class="nav nav-tabs m-tabs m-tabs-line m-tabs-line--brand" role="tablist">
+         <li class="nav-item m-tabs__item">
+            <a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_quick_sidebar_tabs_messenger" role="tab">Messages</a>
+         </li>
+         <li class="nav-item m-tabs__item">
+            <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_quick_sidebar_tabs_settings" role="tab">Settings</a>
+         </li>
+         <li class="nav-item m-tabs__item">
+            <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_quick_sidebar_tabs_logs" role="tab">Logs</a>
+         </li>
+      </ul>
+      <div class="tab-content">
+         <div class="tab-pane active" id="m_quick_sidebar_tabs_messenger" role="tabpanel">
+            <div class="m-messenger m-messenger--message-arrow m-messenger--skin-light">
+               <div class="m-messenger__messages m-scrollable">
+                  <div class="m-messenger__wrapper">
+                     <div class="m-messenger__message m-messenger__message--in">
+                        <div class="m-messenger__message-pic">
+                           <img src="/assets/app/media/img//users/user3.jpg" alt="" />
+                        </div>
+                        <div class="m-messenger__message-body">
+                           <div class="m-messenger__message-arrow"></div>
+                           <div class="m-messenger__message-content">
+                              <div class="m-messenger__message-username">
+                                 Megan wrote
+                              </div>
+                              <div class="m-messenger__message-text">
+                                 Hi Bob. What time will be the meeting ?
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-messenger__wrapper">
+                     <div class="m-messenger__message m-messenger__message--out">
+                        <div class="m-messenger__message-body">
+                           <div class="m-messenger__message-arrow"></div>
+                           <div class="m-messenger__message-content">
+                              <div class="m-messenger__message-text">
+                                 Hi Megan. It's at 2.30PM
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-messenger__wrapper">
+                     <div class="m-messenger__message m-messenger__message--in">
+                        <div class="m-messenger__message-pic">
+                           <img src="/assets/app/media/img//users/user3.jpg" alt="" />
+                        </div>
+                        <div class="m-messenger__message-body">
+                           <div class="m-messenger__message-arrow"></div>
+                           <div class="m-messenger__message-content">
+                              <div class="m-messenger__message-username">
+                                 Megan wrote
+                              </div>
+                              <div class="m-messenger__message-text">
+                                 Will the development team be joining ?
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-messenger__wrapper">
+                     <div class="m-messenger__message m-messenger__message--out">
+                        <div class="m-messenger__message-body">
+                           <div class="m-messenger__message-arrow"></div>
+                           <div class="m-messenger__message-content">
+                              <div class="m-messenger__message-text">
+                                 Yes sure. I invited them as well
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-messenger__datetime">2:30PM</div>
+                  <div class="m-messenger__wrapper">
+                     <div class="m-messenger__message m-messenger__message--in">
+                        <div class="m-messenger__message-pic">
+                           <img src="/assets/app/media/img//users/user3.jpg" alt="" />
+                        </div>
+                        <div class="m-messenger__message-body">
+                           <div class="m-messenger__message-arrow"></div>
+                           <div class="m-messenger__message-content">
+                              <div class="m-messenger__message-username">
+                                 Megan wrote
+                              </div>
+                              <div class="m-messenger__message-text">
+                                 Noted. For the Coca-Cola Mobile App project as well ?
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-messenger__wrapper">
+                     <div class="m-messenger__message m-messenger__message--out">
+                        <div class="m-messenger__message-body">
+                           <div class="m-messenger__message-arrow"></div>
+                           <div class="m-messenger__message-content">
+                              <div class="m-messenger__message-text">
+                                 Yes, sure.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-messenger__wrapper">
+                     <div class="m-messenger__message m-messenger__message--out">
+                        <div class="m-messenger__message-body">
+                           <div class="m-messenger__message-arrow"></div>
+                           <div class="m-messenger__message-content">
+                              <div class="m-messenger__message-text">
+                                 Please also prepare the quotation for the Loop CRM project as well.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-messenger__datetime">3:15PM</div>
+                  <div class="m-messenger__wrapper">
+                     <div class="m-messenger__message m-messenger__message--in">
+                        <div class="m-messenger__message-no-pic m--bg-fill-danger">
+                           <span>M</span>
+                        </div>
+                        <div class="m-messenger__message-body">
+                           <div class="m-messenger__message-arrow"></div>
+                           <div class="m-messenger__message-content">
+                              <div class="m-messenger__message-username">
+                                 Megan wrote
+                              </div>
+                              <div class="m-messenger__message-text">
+                                 Noted. I will prepare it.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-messenger__wrapper">
+                     <div class="m-messenger__message m-messenger__message--out">
+                        <div class="m-messenger__message-body">
+                           <div class="m-messenger__message-arrow"></div>
+                           <div class="m-messenger__message-content">
+                              <div class="m-messenger__message-text">
+                                 Thanks Megan. I will see you later.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-messenger__wrapper">
+                     <div class="m-messenger__message m-messenger__message--in">
+                        <div class="m-messenger__message-pic">
+                           <img src="/assets/app/media/img//users/user3.jpg" alt="" />
+                        </div>
+                        <div class="m-messenger__message-body">
+                           <div class="m-messenger__message-arrow"></div>
+                           <div class="m-messenger__message-content">
+                              <div class="m-messenger__message-username">
+                                 Megan wrote
+                              </div>
+                              <div class="m-messenger__message-text">
+                                 Sure. See you in the meeting soon.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="m-messenger__seperator"></div>
+               <div class="m-messenger__form">
+                  <div class="m-messenger__form-controls">
+                     <input type="text" name="" placeholder="Type here..." class="m-messenger__form-input">
+                  </div>
+                  <div class="m-messenger__form-tools">
+                     <a href="" class="m-messenger__form-attachment">
+                     <i class="la la-paperclip"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="tab-pane" id="m_quick_sidebar_tabs_settings" role="tabpanel">
+            <div class="m-list-settings m-scrollable">
+               <div class="m-list-settings__group">
+                  <div class="m-list-settings__heading">General Settings</div>
+                  <div class="m-list-settings__item">
+                     <span class="m-list-settings__item-label">Email Notifications</span>
+                     <span class="m-list-settings__item-control">
+                     <span class="m-switch m-switch--outline m-switch--icon-check m-switch--brand">
+                     <label>
+                     <input type="checkbox" checked="checked" name="">
+                     <span></span>
+                     </label>
+                     </span>
+                     </span>
+                  </div>
+                  <div class="m-list-settings__item">
+                     <span class="m-list-settings__item-label">Site Tracking</span>
+                     <span class="m-list-settings__item-control">
+                     <span class="m-switch m-switch--outline m-switch--icon-check m-switch--brand">
+                     <label>
+                     <input type="checkbox" name="">
+                     <span></span>
+                     </label>
+                     </span>
+                     </span>
+                  </div>
+                  <div class="m-list-settings__item">
+                     <span class="m-list-settings__item-label">SMS Alerts</span>
+                     <span class="m-list-settings__item-control">
+                     <span class="m-switch m-switch--outline m-switch--icon-check m-switch--brand">
+                     <label>
+                     <input type="checkbox" name="">
+                     <span></span>
+                     </label>
+                     </span>
+                     </span>
+                  </div>
+                  <div class="m-list-settings__item">
+                     <span class="m-list-settings__item-label">Backup Storage</span>
+                     <span class="m-list-settings__item-control">
+                     <span class="m-switch m-switch--outline m-switch--icon-check m-switch--brand">
+                     <label>
+                     <input type="checkbox" name="">
+                     <span></span>
+                     </label>
+                     </span>
+                     </span>
+                  </div>
+                  <div class="m-list-settings__item">
+                     <span class="m-list-settings__item-label">Audit Logs</span>
+                     <span class="m-list-settings__item-control">
+                     <span class="m-switch m-switch--outline m-switch--icon-check m-switch--brand">
+                     <label>
+                     <input type="checkbox" checked="checked" name="">
+                     <span></span>
+                     </label>
+                     </span>
+                     </span>
+                  </div>
+               </div>
+               <div class="m-list-settings__group">
+                  <div class="m-list-settings__heading">System Settings</div>
+                  <div class="m-list-settings__item">
+                     <span class="m-list-settings__item-label">System Logs</span>
+                     <span class="m-list-settings__item-control">
+                     <span class="m-switch m-switch--outline m-switch--icon-check m-switch--brand">
+                     <label>
+                     <input type="checkbox" name="">
+                     <span></span>
+                     </label>
+                     </span>
+                     </span>
+                  </div>
+                  <div class="m-list-settings__item">
+                     <span class="m-list-settings__item-label">Error Reporting</span>
+                     <span class="m-list-settings__item-control">
+                     <span class="m-switch m-switch--outline m-switch--icon-check m-switch--brand">
+                     <label>
+                     <input type="checkbox" name="">
+                     <span></span>
+                     </label>
+                     </span>
+                     </span>
+                  </div>
+                  <div class="m-list-settings__item">
+                     <span class="m-list-settings__item-label">Applications Logs</span>
+                     <span class="m-list-settings__item-control">
+                     <span class="m-switch m-switch--outline m-switch--icon-check m-switch--brand">
+                     <label>
+                     <input type="checkbox" name="">
+                     <span></span>
+                     </label>
+                     </span>
+                     </span>
+                  </div>
+                  <div class="m-list-settings__item">
+                     <span class="m-list-settings__item-label">Backup Servers</span>
+                     <span class="m-list-settings__item-control">
+                     <span class="m-switch m-switch--outline m-switch--icon-check m-switch--brand">
+                     <label>
+                     <input type="checkbox" checked="checked" name="">
+                     <span></span>
+                     </label>
+                     </span>
+                     </span>
+                  </div>
+                  <div class="m-list-settings__item">
+                     <span class="m-list-settings__item-label">Audit Logs</span>
+                     <span class="m-list-settings__item-control">
+                     <span class="m-switch m-switch--outline m-switch--icon-check m-switch--brand">
+                     <label>
+                     <input type="checkbox" name="">
+                     <span></span>
+                     </label>
+                     </span>
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="tab-pane" id="m_quick_sidebar_tabs_logs" role="tabpanel">
+            <div class="m-list-timeline m-scrollable">
+               <div class="m-list-timeline__group">
+                  <div class="m-list-timeline__heading">
+                     System Logs
+                  </div>
+                  <div class="m-list-timeline__items">
+                     <div class="m-list-timeline__item">
+                        <span class="m-list-timeline__badge m-list-timeline__badge--state-success"></span>
+                        <a href="" class="m-list-timeline__text">12 new users registered
+                        <span class="m-badge m-badge--warning m-badge--wide">important</span>
+                        </a>
+                        <span class="m-list-timeline__time">Just now</span>
+                     </div>
+                     <div class="m-list-timeline__item">
+                        <span class="m-list-timeline__badge m-list-timeline__badge--state-info"></span>
+                        <a href="" class="m-list-timeline__text">System shutdown</a>
+                        <span class="m-list-timeline__time">11 mins</span>
+                     </div>
+                     <div class="m-list-timeline__item">
+                        <span class="m-list-timeline__badge m-list-timeline__badge--state-danger"></span>
+                        <a href="" class="m-list-timeline__text">New invoice received</a>
+                        <span class="m-list-timeline__time">20 mins</span>
+                     </div>
+                     <div class="m-list-timeline__item">
+                        <span class="m-list-timeline__badge m-list-timeline__badge--state-warning"></span>
+                        <a href="" class="m-list-timeline__text">Database overloaded 89%
+                        <span class="m-badge m-badge--success m-badge--wide">resolved</span>
+                        </a>
+                        <span class="m-list-timeline__time">1 hr</span>
+                     </div>
+                     <div class="m-list-timeline__item">
+                        <span class="m-list-timeline__badge m-list-timeline__badge--state-success"></span>
+                        <a href="" class="m-list-timeline__text">System error</a>
+                        <span class="m-list-timeline__time">2 hrs</span>
+                     </div>
+                     <div class="m-list-timeline__item">
+                        <span class="m-list-timeline__badge m-list-timeline__badge--state-info"></span>
+                        <a href="" class="m-list-timeline__text">Production server down
+                        <span class="m-badge m-badge--danger m-badge--wide">pending</span>
+                        </a>
+                        <span class="m-list-timeline__time">3 hrs</span>
+                     </div>
+                     <div class="m-list-timeline__item">
+                        <span class="m-list-timeline__badge m-list-timeline__badge--state-success"></span>
+                        <a href="" class="m-list-timeline__text">Production server up</a>
+                        <span class="m-list-timeline__time">5 hrs</span>
+                     </div>
+                  </div>
+               </div>
+              
+
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- end::Quick Sidebar -->
+<!-- begin::Scroll Top -->
+<div id="m_scroll_top" class="m-scroll-top">
+   <i class="la la-arrow-up"></i>
+</div>
+<!-- end::Scroll Top -->
+<!--begin::Base Scripts -->
+<script src="/assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+<script src="/assets/demo/demo8/base/scripts.bundle.js" type="text/javascript"></script>
+<!--end::Base Scripts -->
+<!--begin::Page Vendors Scripts -->
+<script src="/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+<!--end::Page Vendors Scripts -->
+<!--begin::Page Snippets -->
+<script src="/assets/app/js/dashboard.js" type="text/javascript"></script>
+<!--end::Page Snippets -->
+<!-- begin::Page Loader -->
+<script>
+   $(window).on('load', function() {
+   	$('body').removeClass('m-page--loading');
+   });
+</script>
+<!-- end::Page Loader -->
+</body>
+<!-- end::Body -->
+</html>
