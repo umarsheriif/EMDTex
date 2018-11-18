@@ -23,11 +23,11 @@ const config = {
 sql.connect(config).catch(err => console.log(err));
 const formRouter = express.Router();
 const nav = [{ link: "/payment", title: "Data" }];
-const dataRouter = require("./src/routes/dataRoutes")(nav);
-const adminRouter = require("./src/routes/adminRoutes")(nav);
-const authRouter = require("./src/routes/authRoutes")(nav);
-const paymentRouter = require("./src/routes/paymentRoutes")(nav);
-const documentRouter = require("./src/routes/documentRoutes")(nav);
+const dataRouter = require("./../../src/routes/dataRoutes")(nav);
+const adminRouter = require("./../../src/routes/adminRoutes")(nav);
+const authRouter = require("./../../src/routes/authRoutes")(nav);
+const paymentRouter = require("./../../src/routes/paymentRoutes")(nav);
+const documentRouter = require("./../../src/routes/documentRoutes")(nav);
 
 app.use(morgan("tiny"));
 // app.use(bodyParser());
@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(session({ secret: "payment" }));
 
-require("./src/config/passport.js")(app);
+require("./../../src/config/passport.js")(app);
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(
@@ -51,7 +51,7 @@ app.use(
   "/js",
   express.static(path.join(__dirname, "node_modules/jquery/dist"))
 );
-app.set("views", "src/views");
+app.set("views", "./../../src/views");
 app.set("view engine", "ejs");
 
 formRouter.route("/forms").get((req, res) => {
