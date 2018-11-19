@@ -10,7 +10,7 @@ function documentanalsysServices() {
     );
     return new Promise((resolve, reject) => {
       axios
-        .post("http://127.0.0.1:5000/api/v1/document/detector", {
+        .post("http://40.87.13.76/api/v1/document/detector", {
           data:ccs.data
         })
         .then(response => {
