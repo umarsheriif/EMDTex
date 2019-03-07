@@ -1,0 +1,16 @@
+PHase 1: 
+
+
+1- upload file
+2- translate file
+3- view item with log information and date of logs
+4- view classification of each uploaded document
+
+Parse the arabic documents inside an arabic dashoboard.
+Parse the english documents insdie an english dashboard. 
+
+
+Phase 2: 
+
+detect the document language then choose the attributes while translating. 
+send the attirbutes to the service in order to translate the document language to enlgish in order to get hte right classification

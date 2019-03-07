@@ -8,12 +8,17 @@ const documentController = require("../controllers/documentController.js");
 const documentServices = require("../services/documentanalsysServices.js");
 
 function router(nav) {
-    const { getIndex, uploadedfile } = documentController(documentServices,
+    const {
+        getIndex,
+        uploadedfile,
+        readFiles
+    } = documentController(documentServices,
         nav
     );
     //# We have to activate middle ware in order to check if the user is authenticated or not
     // dataRouter.use(middleware);
     documentRouter.route("/").get(getIndex);
+    documentRouter.route("/readall").get(readFiles);
     documentRouter.route("/uploadedfile/:id").get(uploadedfile);
     documentRouter.route("/upload").post(upload.single('file-to-upload'), (req, res) => {
         const encfile = req.file.filename;
